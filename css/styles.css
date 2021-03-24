@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section-logo{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+article{
+    padding: 20px;
+    column-count: 3;
+}
+.item{
+    transition: all 300ms;
+    position: relative;
+}
+
+.item::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transform: scale(0);
+    transition: all 300ms;
+    opacity: 0;
+}
+
+.item:hover::after{
+    opacity: 1;
+    transform: scale(1);
+}
+.item:hover{
+    transform: scale(1.05);
+}
+
+
+.textos-cuadros{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-cuadros h1{
+    font-size: 80px;
+    font-weight: 300;
+    color: #B24B62;
+}
+
+.contenedor-cuadros{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    
+    
+}
+
+.cuadros__img{
+    width: 320;
+    height: 320;
+    margin-bottom: 30px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.cuadros__img:hover{
+    filter: brightness(100%);
+    opacity: 1;
+    transform: scale(1);
+    transform: scale(1.05);
+}
+
+.textos-cases{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-cases h1{
+    font-size: 80px;
+    font-weight: 300;
+    color: #B24B62;
+}
+
+.contenedor-cases{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.cases__img{
+    width: 320;
+    height: 320;
+    margin-bottom: 30px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.cases__img:hover{
+    filter: brightness(100%);
+    opacity: 1;
+    transform: scale(1);
+    transform: scale(1.05);
+}
+
+.textos-diseño{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-diseño h1{
+    font-size: 80px;
+    font-weight: 300;
+    color: #B24B62;
+}
+
+.contenedor-diseño{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.diseño__img{
+    width: 320;
+    height: 320;
+    margin-bottom: 30px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.diseño__img:hover{
+    filter: brightness(100%);
+    opacity: 1;
+    transform: scale(1);
+    transform: scale(1.05);
+}
+
+.textos-ilustraciones{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-ilustraciones h1{
+    font-size: 80px;
+    font-weight: 300;
+    color: #B24B62;
+}
+.contenedor-ilustraciones{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.ilustraciones__img{
+    width: 320;
+    height: 320;
+    margin-bottom: 30px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.ilustraciones__img:hover{
+    filter: brightness(100%);
+    opacity: 1;
+    transform: scale(1);
+    transform: scale(1.05);
+}
+
+.titulo{
+    color: #B24B62;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 800px;
+    background: #ee9ca7;  /* fallback for old browsers */ 
+    background: -webkit-linear-gradient(to right, hsla(353, 100%, 93%, 0.568), hsla(352, 71%, 77%, 0.685)), url(../Img/Fondo.JPG);
+    background: linear-gradient(to right, hsla(353, 100%, 93%, 0.568), hsla(352, 71%, 77%, 0.685)), url(../Img/Fondo.JPG); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #682836;
+    font-family: unset;
+    font-weight: 2000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 80px;
+    font-weight: 300;
+    color: white;
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+footer {
+    min-height: 70px;
+    background-color: #ffcdcd;
+    background-image: -moz-linear-gradient(top, #fcc6c6, #fca5a5);
+    background-image: -o-linear-gradient(top, #ffd3d3, #ffb3b3);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f8b8b8), color-stop(1, #ffa8a8));
+    background-image: -webkit-linear-gradient(#ffc1c1, #f8b7b7);
+    background-image: linear-gradient(top, #ffbcbc, #f1bfbf);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#191919', endColorStr='#000000');
+    border-top: 1px solid rgba(252, 163, 163, 0.3);
+    width: 100%;
+    
+  }
+
+.contenedor-logo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+
+.redes{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.redes li{
+    display: inline-block;
+}
+
+.redes a{
+    padding: 10px;
+}
